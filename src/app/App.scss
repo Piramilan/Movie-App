@@ -1,0 +1,10 @@
+.app {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  font-family: var(--font-base);
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
