@@ -9,6 +9,14 @@
 # UpComing Movies Page UI
 ![Desktop1](https://user-images.githubusercontent.com/65810943/177599715-65d3aa6a-a5b7-44dd-a0a6-d07bd9fd5fe9.png)
 
+## Mobile UI
+
+# Single Movie Page UI
+![mob3](https://user-images.githubusercontent.com/65810943/177600352-635a95e1-0a04-4efd-b689-89f9ea01b162.png)
+
+# UpComing Movies Page UI
+![mob1](https://user-images.githubusercontent.com/65810943/177600224-15213f60-1787-4b95-a272-b5772a2ee8a6.png)
+
 
 # Getting Started with Create React App
 
