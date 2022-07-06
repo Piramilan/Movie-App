@@ -18,7 +18,8 @@ const UpcomingMovies = () => {
 
   useEffect(() => {
     setData(movieData);
-  }, []);
+    console.log(movieData);
+  }, [movieData]);
 
   return (
     <div className="container">
