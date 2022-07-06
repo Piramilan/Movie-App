@@ -1,27 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getTrendingMovies } from "../../api/MovieApi";
 import { MOVIE_IMAGE_BASE_URL } from "../../constants/AppConstants";
 import { APP_ROUTES } from "../../constants/AppRoutes";
+import { getAllTrendingMovies } from "../../redux/movieSlice";
 
 import "./_Home.scss";
 
 const Home = () => {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getTrendingMovies();
-      setData(data);
-      return;
-    };
-    fetchData().catch(console.error);
-  }, []);
-
+  const data = useSelector(getAllTrendingMovies);
   return (
     <div className="movies">
       <h1 className="heading">Trending Movies</h1>
       <div className="movie_list">
+        {console.log(data)}
         {data?.map((item) => (
           <Link
             to={`/${APP_ROUTES.MOVIE}/${item.id}`}

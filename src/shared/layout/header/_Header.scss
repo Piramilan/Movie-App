@@ -29,6 +29,10 @@ header {
   &:hover {
     color: var(--secondary-color);
   }
+
+  &:active {
+    color: var(--secondary-color);
+  }
 }
 
 @media all and (max-width: 650px) {
