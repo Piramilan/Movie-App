@@ -1,7 +1,12 @@
 ## Desktop UI
 
+# Home Page UI
 ![Desktop](https://user-images.githubusercontent.com/65810943/177599658-e1b2a58a-ed39-419d-a35c-63bc92785fb4.png)
+
+# Single Movie Page UI
 ![desktop2](https://user-images.githubusercontent.com/65810943/177599706-530143ee-f38d-42ff-b749-24c60f552ff3.png)
+
+# UpComing Movies Page UI
 ![Desktop1](https://user-images.githubusercontent.com/65810943/177599715-65d3aa6a-a5b7-44dd-a0a6-d07bd9fd5fe9.png)
 
 
