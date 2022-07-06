@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { getUpComingMovies } from "../../api/MovieApi";
 import { MOVIE_IMAGE_BASE_URL } from "../../constants/AppConstants";
 
 import "./_UpcomingMovies.scss";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  addUpcomingMovies,
-  getAllUpcomingMovies,
-} from "../../redux/movieSlice";
+import { useSelector } from "react-redux";
+import { getAllUpcomingMovies } from "../../redux/movieSlice";
 
 const UpcomingMovies = () => {
   const [data, setData] = useState();
@@ -23,7 +19,7 @@ const UpcomingMovies = () => {
 
   return (
     <div className="container">
-      <h1 className="heading">UpcomingMovies</h1>
+      <h1 className="heading">Upcoming Movies</h1>
       <Carousel
         className="carousel"
         autoPlay={true}

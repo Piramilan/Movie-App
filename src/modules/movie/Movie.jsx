@@ -16,7 +16,7 @@ const Movie = () => {
   useEffect(() => {
     setMovie(location.state?.data);
     setMovieGenre(genre);
-  }, [location]);
+  }, [location, genre]);
 
   return (
     <div className="container">
@@ -24,12 +24,12 @@ const Movie = () => {
       <div
         className="bg_image"
         style={{
-          backgroundImage: `url(${MOVIE_IMAGE_BASE_URL}${movie.backdrop_path})`,
+          backgroundImage: `url(${MOVIE_IMAGE_BASE_URL}${movie?.backdrop_path})`,
         }}
       >
         <img
           className="card_image"
-          src={`${MOVIE_IMAGE_BASE_URL}${movie.poster_path}`}
+          src={`${MOVIE_IMAGE_BASE_URL}${movie?.poster_path}`}
           alt=""
         />
       </div>
