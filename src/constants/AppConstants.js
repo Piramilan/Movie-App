@@ -1,4 +1,3 @@
-// export const MOVIE_API_KEY = "f5baf8c74c7d5f00a242c165979d0913";
 export const BASE_URL = "https://api.themoviedb.org/3";
 export const MOVIE_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
