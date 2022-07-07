@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { MOVIE_IMAGE_BASE_URL } from "../../constants/AppConstants";
 
 import "./_UpcomingMovies.scss";
 import { useSelector } from "react-redux";
@@ -32,7 +31,7 @@ const UpcomingMovies = () => {
 
             <img
               className="carousel_image"
-              src={`${MOVIE_IMAGE_BASE_URL}${item.poster_path}`}
+              src={`${process.env.REACT_APP_MOVIE_IMAGE_BASE_URL}${item.poster_path}`}
               alt={item.title}
             />
           </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { MOVIE_IMAGE_BASE_URL } from "../../constants/AppConstants";
 import { APP_ROUTES } from "../../constants/AppRoutes";
 import { getAllTrendingMovies } from "../../redux/movieSlice";
 
@@ -30,7 +29,7 @@ const Home = () => {
           >
             <div className="movie_card">
               <img
-                src={`${MOVIE_IMAGE_BASE_URL}${item.poster_path}`}
+                src={`${process.env.REACT_APP_MOVIE_IMAGE_BASE_URL}${item.poster_path}`}
                 alt={item.title}
               />
               <h1>{item.title}</h1>

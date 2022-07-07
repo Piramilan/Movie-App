@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { MOVIE_IMAGE_BASE_URL } from "../../constants/AppConstants";
 import { getAllMoviesGenre } from "../../redux/movieSlice";
 
 import "./_Movie.scss";
@@ -24,12 +23,12 @@ const Movie = () => {
       <div
         className="bg_image"
         style={{
-          backgroundImage: `url(${MOVIE_IMAGE_BASE_URL}${movie?.backdrop_path})`,
+          backgroundImage: `url(${process.env.REACT_APP_MOVIE_IMAGE_BASE_URL}${movie?.backdrop_path})`,
         }}
       >
         <img
           className="card_image"
-          src={`${MOVIE_IMAGE_BASE_URL}${movie?.poster_path}`}
+          src={`${process.env.REACT_APP_MOVIE_IMAGE_BASE_URL}${movie?.poster_path}`}
           alt=""
         />
       </div>

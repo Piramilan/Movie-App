@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer">
       <h1 onClick={() => changeRoute(APP_ROUTES.HOME)}>Movie App</h1>
       <p>
-        Copyright &copy; 2022 Developed By <a href="#">Milan</a>
+        Copyright &copy; 2022 Developed By Milan
       </p>
     </div>
   );

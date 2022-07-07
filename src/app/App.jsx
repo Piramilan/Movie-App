@@ -33,7 +33,8 @@ function App() {
       return;
     };
     fetchData().catch(console.error);
-  }, []);
+    console.log("first")
+  }, [dispatch]);
 
   return (
     <div className="app">

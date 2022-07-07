@@ -1,6 +1,5 @@
-import { BASE_URL } from "../constants/AppConstants";
-
 const MOVIE_API_KEY = process.env.REACT_APP_API_MOVIE;
+const  BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export async function getTrendingMovies() {
   const request = await fetch(
