@@ -36,7 +36,7 @@ const Movie = () => {
         <h1 className="title">{movie.title}</h1>
         <span className="release_date">{movie.release_date}</span>
         <p className="overview">{movie.overview}</p>
-        <ul className="genre_list">
+        <ul className={`${movie.genre_ids?.length > 3 ? 'grid_list':'genre_list'}`}>
           {movieGenre.genres?.map((item) =>
             movie.genre_ids.includes(item.id) ? (
               <li className="genre_item" key={item.id}>

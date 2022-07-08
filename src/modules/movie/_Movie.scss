@@ -36,7 +36,7 @@
 
     .title {
       padding: 10px 0;
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     .release_date {
@@ -48,7 +48,7 @@
       max-width: 550px;
     }
 
-    .genre_list {
+    .genre_list,.grid_list {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -76,6 +76,11 @@
     .content {
       .title {
         font-size: 2rem;
+      }
+      .grid_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
       }
     }
   }
